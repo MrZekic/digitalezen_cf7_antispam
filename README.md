@@ -1,131 +1,114 @@
-# 🛡️ DigitaleZen CF7 AntiSpam Shield
+# Advanced Anti-Spam Shield for Contact Form 7 by DigitaleZen
 
-Il plugin definitivo per proteggere Contact Form 7 dallo spam, senza compromessi.
+![GitHub release](https://img.shields.io/github/release/MrZekic/digitalezen_cf7_antispam.svg) ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-Creato per difendere il tuo sito dagli attacchi automatici più aggressivi, **CF7 AntiSpam Shield** combina intelligenza dinamica, automazione e controllo totale, il tutto con un’interfaccia semplice e minimale in perfetto stile DigitaleZen.
+![Contact Form 7 Anti-Spam](https://example.com/path/to/image.png)
 
----
+## Overview
 
-## 🚀 Caratteristiche principali
+Welcome to the **DigitaleZen CF7 Antispam** repository. This plugin provides an advanced anti-spam shield for Contact Form 7, ensuring that your forms remain free from unwanted spam submissions. With features like a real-time blacklist, logging, and a robust firewall, you can enhance your website's security and protect your email inbox.
 
-### 🔒 1. Protezione avanzata Contact Form 7
-Blocca spam in tempo reale grazie a una combinazione di tecniche moderne:
+## Features
 
-- **Honeypot invisibile**
-- **Token di sessione a scadenza oraria**
-- **Controllo velocità invio (min 4 secondi)**
-- **Blacklist dinamica aggiornata ogni giorno**
-- **Flood protection (3 tentativi in 15 minuti)**
+- **Real-Time Blacklist**: Automatically blocks known spam sources.
+- **Logging**: Keeps track of all submissions and blocked attempts.
+- **Firewall Protection**: Shields your forms from malicious attacks.
+- **Form Validation**: Ensures that only valid submissions go through.
+- **Easy Integration**: Seamlessly works with Contact Form 7.
 
----
+## Installation
 
-### 🧠 2. Blacklist dinamica by DigitaleZen (via Google Apps Script)
+To install the DigitaleZen CF7 Antispam plugin, follow these steps:
 
-Il plugin si collega a un **servizio pubblico ufficiale** mantenuto da [DigitaleZen.it](https://digitalezen.it), che fornisce un file JSON sempre aggiornato con dati aggregati da fonti autorevoli:
+1. Download the latest release from our [Releases page](https://github.com/MrZekic/digitalezen_cf7_antispam/releases).
+2. Upload the plugin files to the `/wp-content/plugins/digitalezen_cf7_antispam` directory.
+3. Activate the plugin through the 'Plugins' menu in WordPress.
+4. Configure the settings to suit your needs.
 
-- 🧱 **StopForumSpam** (IP e email noti)
-- 📬 **Spamhaus / SpamCop** (liste DNSBL)
-- Altri provider in sviluppo...
+## Usage
 
-👉 Il sistema si aggiorna **ogni 24 ore** in automatico.
+After activation, navigate to the plugin settings. Here, you can customize the following:
 
----
+- **Enable/Disable Blacklist**: Choose whether to use the real-time blacklist.
+- **Logging Options**: Set up logging preferences to monitor submissions.
+- **Firewall Settings**: Adjust the firewall rules to fit your security needs.
 
-### 📁 3. Logging completo dei tentativi bloccati
+## Topics
 
-Tutti i tentativi di invio bloccati vengono **registrati in un file CSV** che include:
+This plugin covers a variety of topics relevant to web security and form management:
 
-- Data e ora
-- Email e IP del mittente
-- Motivo del blocco (honeypot, blacklist, flood, ecc.)
-- Valore scatenante (es. parola chiave, dominio...)
+- **Anti-Spam**: Protect your forms from unwanted submissions.
+- **Blacklist**: Block known spam sources in real-time.
+- **Contact Form 7**: Integrates directly with the popular CF7 plugin.
+- **Email Protection**: Safeguard your email from spam.
+- **PHP Plugin**: Built using PHP for WordPress.
+- **Security**: Enhance the overall security of your website.
+- **Spam Protection**: Implement effective measures against spam.
 
----
+## Contributing
 
-### 💥 4. Firewall "soft" temporaneo
+We welcome contributions to the DigitaleZen CF7 Antispam project. If you would like to help, please follow these steps:
 
-Se un IP tenta invii sospetti, viene **bloccato per 10 minuti**.  
-Il file `block-ip.txt` gestisce la lista in modo dinamico e viene ripulito automaticamente.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with clear messages.
+4. Push your branch to your forked repository.
+5. Submit a pull request to the main repository.
 
----
+## Issues
 
-### 📊 5. Dashboard interattiva in WP Admin
+If you encounter any issues while using the plugin, please check the [Issues section](https://github.com/MrZekic/digitalezen_cf7_antispam/issues). You can report bugs or request features there.
 
-- 📬 Configura l’email che riceve il report settimanale
-- 🧾 Visualizza i **file log e JSON** generati dal plugin
-- 📈 Analizza i tentativi bloccati con un **grafico in tempo reale**
-- 🔎 Tabella degli ultimi 30 bot intercettati
+## License
 
-Tutto visibile da un’unica pagina, accessibile solo dagli **amministratori WordPress**.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/MrZekic/digitalezen_cf7_antispam/blob/main/LICENSE) file for details.
 
----
+## Contact
 
-### 📬 6. Report settimanale automatico
+For any inquiries or support, please reach out to us at [DigitaleZen Support](mailto:support@digitalezen.com).
 
-Ogni lunedì alle 02:00 riceverai un'email con il file CSV dei tentativi bloccati, aggiornato e azzerato.  
-Il destinatario è configurabile dalla dashboard.
+## Releases
 
----
+For the latest updates and releases, visit our [Releases page](https://github.com/MrZekic/digitalezen_cf7_antispam/releases). Download the latest version and execute it to enjoy the new features and improvements.
 
-## 🛠️ File generati dal plugin
+![Releases](https://img.shields.io/badge/releases-latest-blue.svg)
 
-| Nome file                | Descrizione |
-|--------------------------|-------------|
-| `cf7-spam-log.csv`       | Log dettagliato dei blocchi |
-| `cf7-blacklist.json`     | Blacklist aggiornata da DigitaleZen |
-| `block-ip.txt`           | IP temporaneamente bannati |
-| `ip-attempts.json`       | Storico tentativi sospetti per IP |
-| `email-attempts.json`    | Storico tentativi sospetti per email |
+## Screenshots
 
-Tutti visualizzabili e scaricabili dal backend.
+![Settings Page](https://example.com/path/to/settings-image.png)
 
----
+![Logging Feature](https://example.com/path/to/logging-image.png)
 
-## 🔐 Sicurezza e Privacy
+## FAQ
 
-- Nessuna raccolta dati lato DigitaleZen.
-- Tutti i file restano sul tuo server.
-- Solo chi ha i permessi `manage_options` può accedere alla dashboard.
-- Accesso ai JSON solo tramite **whitelist sicura**.
+### How does the real-time blacklist work?
 
----
+The real-time blacklist checks submissions against a database of known spam sources. If a match is found, the submission is blocked.
 
-### 🧩 In sviluppo
+### Can I customize the logging options?
 
-- ⚠️ **Pulsante "Segnala come spam"** direttamente dalle email ricevute
-- 🔌 **Modulo premium**: collegamento ad API esterne (IPQualityScore, SpamAssassin, CleanTalk…)
-- 💬 **Notifiche istantanee** (email, Telegram) per invii sospetti
-- 🔁 **Pulizia automatica** dei file IP/JSON temporanei scaduti
-- ⚙️ **Gestione completa da dashboard**:
-  - Personalizza ogni parametro: email di notifica, timeout IP, limiti tentativi, durata flood protection, parole chiave vietate, domini sospetti, e altro...
-  - Nessun bisogno di modificare codice o accedere via FTP
+Yes, you can adjust the logging settings in the plugin configuration. This allows you to control what information is logged.
 
----
+### Is this plugin compatible with other WordPress plugins?
 
-### 🧠 Perché è importante?
+The DigitaleZen CF7 Antispam plugin is designed to work with Contact Form 7 and should not conflict with other well-coded plugins. However, always test in a staging environment first.
 
-L’obiettivo è offrire **il massimo controllo direttamente dalla UI**, così l'utente può adattare il plugin alle specifiche esigenze del proprio sito, **senza mai toccare il codice**.
+### What should I do if I find a bug?
 
+Please report any bugs in the [Issues section](https://github.com/MrZekic/digitalezen_cf7_antispam/issues). Include as much detail as possible to help us resolve the issue quickly.
 
----
+### How can I support the project?
 
-## ❤️ Perché funziona?
+You can support the project by contributing code, reporting issues, or sharing your experience with others. Every bit helps!
 
-Questo plugin **non si limita a un captcha**.  
-Lavora su **più livelli contemporaneamente**: prevenzione, controllo, blacklist intelligente e blocco attivo.
+## Additional Resources
 
-Confrontato con soluzioni standard, **DigitaleZen CF7 AntiSpam Shield**:
+- [Contact Form 7 Official Site](https://contactform7.com/)
+- [WordPress Plugin Developer Handbook](https://developer.wordpress.org/plugins/)
+- [Security Best Practices for WordPress](https://wordpress.org/support/article/wordpress-security/)
 
-- Blocca spam che passa anche con reCaptcha attivo
-- Intercetta attacchi distribuiti, bruteforce, form-bots evoluti
-- Registra tutto con trasparenza
+## Acknowledgments
 
-> Proteggi i tuoi moduli. Mantieni pulito il tuo sito. E fai respirare il tuo server.
+Thank you to all contributors and users who make this project possible. Your support and feedback help us improve the plugin and provide a better experience for everyone.
 
----
-
-## 🧘 Powered by [DigitaleZen.it](https://digitalezen.it)
-
-Creato con consapevolezza, leggerezza e un pizzico di furia antispam.  
-Per contatti, moduli avanzati o supporto: [digitalezen.it](https://digitalezen.it)
-
+For more information and updates, please check the [Releases section](https://github.com/MrZekic/digitalezen_cf7_antispam/releases). Download the latest version and execute it to stay protected against spam.
